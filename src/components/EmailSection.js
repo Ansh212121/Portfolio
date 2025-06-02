@@ -7,8 +7,6 @@ const EmailSection = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "43ade4ef-62f3-401b-9d31-e97f8da1b10a");
-
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
@@ -24,6 +22,8 @@ const EmailSection = () => {
     if (res.success) {
       console.log("Success", res);
       setEmailSubmitted(true);
+    } else {
+      console.error("Failed to send email", res);
     }
   };
 
@@ -35,6 +35,40 @@ const EmailSection = () => {
         </p>
       ) : (
         <form className="flex flex-col" onSubmit={handleSubmit}>
+          {/* Required hidden fields */}
+          <input
+            type="hidden"
+            name="access_key"
+            value="6dae0ba1-2784-4239-9840-14beb56f4acd"
+          />
+          <input type="hidden" name="from_name" value="Portfolio Contact" />
+          <input type="hidden" name="subject" value="New Contact Message" />
+          <input type="hidden" name="replyto" value="email" />
+          <input
+            type="checkbox"
+            name="botcheck"
+            style={{ display: "none" }}
+            className="hidden"
+          />
+
+          {/* Add name field */}
+          <div className="mb-6">
+            <label
+              htmlFor="name"
+              className="text-white block mb-2 text-sm font-medium"
+            >
+              Your Name
+            </label>
+            <input
+              name="name"
+              type="text"
+              id="name"
+              required
+              className="bg-[#18191E] border border-[#c95bf5] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="Jacob Smith"
+            />
+          </div>
+
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -51,22 +85,10 @@ const EmailSection = () => {
               placeholder="jacob@google.com"
             />
           </div>
-          <div className="mb-6">
-            <label
-              htmlFor="subject"
-              className="text-white block text-sm mb-2 font-medium"
-            >
-              Subject
-            </label>
-            <input
-              name="subject"
-              type="text"
-              id="subject"
-              required
-              className="bg-[#18191E] border border-[#c95bf5] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Just saying hi"
-            />
-          </div>
+
+          {/* Remove this subject input or rename it to something else to avoid conflicts */}
+          {/* Or keep this if you want users to override subject */}
+
           <div className="mb-6">
             <label
               htmlFor="message"
@@ -77,10 +99,12 @@ const EmailSection = () => {
             <textarea
               name="message"
               id="message"
+              required
               className="bg-[#18191E] border border-[#c95bf5] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Let's talk about..."
             />
           </div>
+
           <button
             type="submit"
             className="bg-[#c95bf5] hover:bg-[#8a6498] text-white font-medium py-2.5 px-5 rounded-lg w-full"
