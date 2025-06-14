@@ -170,7 +170,7 @@ const Navbar = () => {
                               ? "text-[#cd5ff8] font-bold"
                               : ""
                           } hover:text-[#cd5ff8] flex items-center`}
-                          href="https://drive.google.com/file/d/1zX_Z_IcxSi_74Ja9vn-6zAsOcNgmiBAn/view?usp=drive_link"
+                          href="https://drive.google.com/file/d/1xfb1_AgEcI6d1y-WooLpADpJ0l5Y7hS5/view?usp=drive_link"
                           target="_blank"
                           rel="noreferrer"
                         >
