@@ -170,7 +170,7 @@ const Navbar = () => {
                               ? "text-[#cd5ff8] font-bold"
                               : ""
                           } hover:text-[#cd5ff8] flex items-center`}
-                          href="https://drive.google.com/file/d/1TsJ3fROWG6SrKHuK7jyDtx_p6wmpxAln/view?usp=sharinhttps://drive.google.com/file/d/1TsJ3fROWG6SrKHuK7jyDtx_p6wmpxAln/view?usp=sharingg"
+                          href="https://drive.google.com/file/d/1TsJ3fROWG6SrKHuK7jyDtx_p6wmpxAln/view?usp=sharinhttps://drive.google.com/file/d/1TsJ3fROWG6SrKHuK7jyDtx_p6wmpxAln/view?usp=sharingghttps://drive.google.com/file/d/1TsJ3fROWG6SrKHuK7jyDtx_p6wmpxAln/view?usp=drive_link"
                           target="_blank"
                           rel="noreferrer"
                         >
