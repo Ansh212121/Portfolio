@@ -3,14 +3,14 @@ import sorting from "../assets/weatherApp.png";
 import codeforge from "../assets/codeforge.png";
 import dailylog from "../assets/dailylog.png";
 import FinSync2 from "../assets/FinSync2.png";
+import QuizVerse from  "../assets/QuizVerse.png";
 
 const ProjectData = [
   {
     id: 1,
-    title: "DailyLog",
-    imgPath: dailylog,
-    description:
-      "DailyLog is a MERN stack-based web application that allows users to write, manage, and organize their daily logs efficiently. Users can securely sign up, log in, and create personal entries with the ability to edit or delete them anytime. Each log can optionally include a mood tag, adding a personal touch without being the main focus. With a clean and responsive interface built in React, a robust backend powered by Node.js and Express, and MongoDB for seamless data storage, DailyLog offers a smooth and intuitive journaling experience for everyday use.",
+    title: "QuizVerse",
+    imgPath: QuizVerse,
+    description:"QuizVerse is an interactive AI-powered quiz application designed to enhance learning through personalized and engaging experiences. Built using the MERN stack (MongoDB, Express, React, Node.js), it allows users to sign up, log in, and take quizzes tailored to their selected topics and difficulty levels. With secure authentication and validation, user data is protected and sessions are managed via local storage. QuizVerse tracks performance, offering insightful feedback to help learners improve. The UI is fully responsive, supports dark mode, and ensures a smooth user experience. Its mission is to make learning accessible, effective, and enjoyable for students and lifelong learners alike.",
     technologies: [
       "Reactjs",
       "JavaScript",
@@ -18,9 +18,10 @@ const ProjectData = [
       "Nodejs",
       "Express",
       "MongoDB",
+      "Google Gemini",
     ],
-    link: "https://github.com/Ansh212121/DailyLog",
-    demo: "https://daily-log-smoky.vercel.app/",
+    link: "https://github.com/Ansh212121/QuizVerse_Client",
+    demo: "https://quiz-verse-client.vercel.app/",
   },
   {
      id: 2,
@@ -59,6 +60,23 @@ const ProjectData = [
     technologies: ["React", "Express", "MongoDB", "Bootstrap", "Nodejs"],
     link: "https://github.com/Ansh212121/ThoughtHub",
     demo: "https://thoughthub-bg5m.onrender.com/",
+  },
+  {
+    id: 1,
+    title: "DailyLog",
+    imgPath: dailylog,
+    description:
+      "DailyLog is a MERN stack-based web application that allows users to write, manage, and organize their daily logs efficiently. Users can securely sign up, log in, and create personal entries with the ability to edit or delete them anytime. Each log can optionally include a mood tag, adding a personal touch without being the main focus. With a clean and responsive interface built in React, a robust backend powered by Node.js and Express, and MongoDB for seamless data storage, DailyLog offers a smooth and intuitive journaling experience for everyday use.",
+    technologies: [
+      "Reactjs",
+      "JavaScript",
+      "Tailwand CSS",
+      "Nodejs",
+      "Express",
+      "MongoDB",
+    ],
+    link: "https://github.com/Ansh212121/DailyLog",
+    demo: "https://daily-log-smoky.vercel.app/",
   },
  
 ];
